@@ -1,0 +1,25 @@
+apply plugin: 'application'
+mainClassName='Application'
+
+repositories {
+   jcenter()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+        
+    test {
+        java {
+            srcDir 'test'
+        }
+    }
+}
+
+dependencies {
+   compile 'org.slf4j:slf4j-api:1.7.12'
+   testCompile 'junit:junit:4.12'
+}
